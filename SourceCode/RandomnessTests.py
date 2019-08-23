@@ -620,7 +620,7 @@ class RandomnessTester:
                 plus_minus_one.append(1)
         # Product discrete fourier transform of plus minus one
         s = sff.fft(plus_minus_one)
-        modulus = numpy.abs(s[0:n / 2])
+        modulus = numpy.abs(s[0:n // 2])
         tau = numpy.sqrt(numpy.log(1 / 0.05) * n)
         # Theoretical number of peaks
         count_n0 = 0.95 * (n / 2)
